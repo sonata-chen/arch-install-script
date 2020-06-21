@@ -6,7 +6,7 @@ disk_to_install_grub=
 install_networkmanager=true
 wifi=false
 
-other_essential_packages="vim base-devel man-db grub efibootmgr git sudo xdg-user-dirs"
+other_essential_packages="vim base-devel man-db grub git sudo xdg-user-dirs"
 
 echo -e "\e[1;36m\n------ basic system configuration: system time, locale, hostname  ------\n\e[0m"
 
