@@ -1,8 +1,7 @@
 #!/bin/sh
 
 HOSTNAME=PC
-BOOT_LOADER_NAME=ArchLinux
-EFI_mount_point=/efi
+disk_to_install_grub=
 
 install_networkmanager=true
 wifi=false
@@ -59,5 +58,5 @@ fi
 
 echo -e "\e[1;36m\n------ install grub ------\n\e[0m"
 
-grub-install --target=x86_64-efi --efi-directory=${EFI_mount_point} --bootloader-id=${BOOT_LOADER_NAME}
+grub-install --target=i386-pc ${disk_to_install_grub}
 grub-mkconfig -o /boot/grub/grub.cfg
